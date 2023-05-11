@@ -1,0 +1,312 @@
+.wrap {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  background: #424242;
+  height: 300px;
+  display: flex;
+}
+
+.Logo {
+  margin-left: 173px;
+  margin-top: 92px;
+  margin-right: 97px;
+}
+/*圖片是特製的需要寬高*/
+.Logo img {
+  width: 117px;
+  height: 117px;
+}
+.textarea {
+  margin-top: 51px;
+}
+.weight p,
+.height p {
+  color: #ffd366;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.cm,
+.kg {
+  width: 250px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 2px solid #ffd366;
+  border-radius: 10px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 16px;
+  box-sizing: border-box;
+}
+.height,
+.weight {
+  margin-top: 23px;
+}
+.send {
+  margin-top: 92px;
+  margin-left: 53px;
+}
+.send .btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 999em;
+  background-color: #ffd366;
+  border: #ffd366;
+  font-size: 24px;
+  color: #424242;
+}
+.send .btn:hover {
+  background: #ffd366;
+  box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+}
+.send .btn:active {
+  background: #dea821;
+}
+/*依據各種結果出現不同顏色的report，預設樣式*/
+.report .btn {
+  width: 123px;
+  height: 123px;
+  border-radius: 999em;
+  background-color: transparent;
+  font-size: 32px;
+}
+.report {
+  position: relative;
+  margin-top: 92px;
+  display: flex;
+}
+.report-BMI {
+  position: absolute;
+  top: 75px;
+  left: 47px;
+  font-size: 14px;
+  padding-top: 5px;
+}
+.report .loop {
+  position: absolute;
+  border-radius: 999em;
+  top: 89px;
+  left: 84px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+}
+.report .loop img {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+}
+.report-text {
+  padding-top: 50px;
+  padding-left: 18px;
+  font-size: 32px;
+}
+/*以下三組依照結果不同有所變動*/
+/*理想*/
+.reportNormal {
+  color: #86d73f;
+}
+.report .picNormal .btn {
+  border: 6px solid #86d73f;
+  color: #86d73f;
+}
+.BMINormal {
+  color: #86d73f;
+}
+.report .loopNormal {
+  background-color: #86d73f;
+}
+/*過輕*/
+.reportUnderweight {
+  color: #31baf9;
+}
+.report .picUnderweight .btn {
+  border: 6px solid #31baf9;
+  color: #31baf9;
+}
+.BMIUnderweight {
+  color: #31baf9;
+}
+.report .loopUnderweight {
+  background: #31baf9;
+}
+/*過重*/
+.reportOverweight {
+  color: #ff982d;
+}
+.report .picOverweight .btn {
+  border: 6px solid #ff982d;
+  color: #ff982d;
+}
+.BMIOverweight {
+  color: #ff982d;
+}
+.report .loopOverweight {
+  background-color: #ff982d;
+}
+/*輕度肥胖*/
+.reportMildObesity {
+  color: #ff6c03;
+}
+.report .picMildObesity .btn {
+  border: 6px solid #ff6c03;
+  color: #ff6c03;
+}
+.BMIMildObesity {
+  color: #ff6c03;
+}
+.report .loopMildObesity {
+  background-color: #ff6c03;
+}
+/*中度肥胖*/
+.reportModerateObesity {
+  color: #ff6c03;
+}
+.report .picModerateObesity .btn {
+  border: 6px solid #ff6c03;
+  color: #ff6c03;
+}
+.BMIModerateObesity {
+  color: #ff6c03;
+}
+.report .loopModerateObesity {
+  background-color: #ff6c03;
+}
+/*重度肥胖*/
+.reportSevereObesity {
+  color: #ff1200;
+}
+.report .picSevereObesity .btn {
+  border: 6px solid #ff1200;
+  color: #ff1200;
+}
+.BMISevereObesity {
+  color: #ff1200;
+}
+.report .loopSevereObesity {
+  background-color: #ff1200;
+}
+
+.content {
+  background: #f5f5f5;
+  padding-bottom: 58px;
+}
+h1 {
+  font-size: 24px;
+  color: #424242;
+  padding-top: 48px;
+  padding-left: 464px;
+  margin-bottom: 68px;
+}
+.record {
+  display: flex;
+  justify-content: space-between;
+  max-width: 624px;
+  max-height: 62px;
+  background-color: white;
+  margin-left: 200px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+.bar {
+  width: 7px;
+  height: 62px;
+}
+.barNormal {
+  background: #86d73f;
+  box-shadow: 2px 0 3px 0 rgba(134, 215, 63, 0.29);
+}
+.barUnderweight {
+  background: #31baf9;
+  box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
+}
+.barOverweight {
+  background: #ff982d;
+  box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
+}
+.barMildObesity {
+  background: #ff6c03;
+  box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+}
+.barModerateObesity {
+  background: #ff6c03;
+  box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+}
+.barSevereObesity {
+  background: #ff1200;
+  box-shadow: 2px 0 3px 0 rgba(255, 18, 0, 0.29);
+}
+.record p {
+  font-size: 20px;
+  color: #4a4a4a;
+  padding-top: 21px;
+}
+.record span {
+  font-size: 12px;
+  color: #424242;
+  margin-right: 7px;
+}
+.comment {
+  width: 80px;
+  margin-left: 12px;
+}
+.record-comment {
+  display: flex;
+}
+.record .eliminate {
+  padding-top: 27px;
+  font-size: 12px;
+  color: #424242;
+  padding-right: 10px;
+}
+
+footer {
+  background-color: #ffd366;
+  height: 90px;
+  text-align: center;
+}
+.bottomLogo {
+  padding-top: 18px;
+}
+
+@media (max-width: 767px) {
+  .wrap {
+    width: 100%;
+    margin: 0;
+  }
+  header {
+    height: 475px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .Logo {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0;
+  }
+  .textarea {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .send {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+  .report {
+    margin: 0 auto;
+  }
+  .content {
+    text-align: center;
+  }
+  h1 {
+    padding-left: 0px;
+  }
+  .record {
+    margin-left: 28px;
+  }
+  footer {
+    width: 100%;
+  }
+}
